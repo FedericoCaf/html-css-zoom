@@ -4,26 +4,30 @@
   padding: 0;
 }
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 header{
   padding: 10px;
-  height: 70px;
-  background-color: aquamarine;
+  height: 50px;
+  background-color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 main{
-  height: calc(100vh - 250px);
+  height: calc(100vh - 130px);
   background-color:black;
-}
-
-footer{
-  height: 100px;
-  background-color: darkgoldenrod;
 }
 
 header p span{
   padding: 5px;
   margin-left:5px;
-  background-color: gray;
+  background-color:rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   color:white;
 }
@@ -31,16 +35,62 @@ header p span{
 header p{
   display: flex;
   justify-content: flex-end;
- 
 }
 
 main{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
+  margin-bottom: 0;
 }
 
 .box{
-  margin:5px;
+  margin:3px;
+  width: 255px;
+  height: 140px;
+  position: relative;
+}
+
+main .box p{
+  color: white;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+
+footer .left-content, .center-content, .right-content{
+  display: flex;
+}
+
+.icon{
+  text-align: center;
+  margin: 0 15px;
+  font-size: 17px;
+  }
+
+.right-content p{
+  padding: 30px 15px;
+  margin-right: 0px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: red;
+}
+
+.fa-share-square{
+  color:lime;
+}
+
+.fa-angle-up{
+  padding-top: 7px;
 }
